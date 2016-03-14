@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<GameItemTypes>
+    <DataChecksum NoParse="1">
+        <Ignore>DispName</Ignore>
+        <Translate>DisplayName,Description</Translate>
+    </DataChecksum>    
+    <GameItemType InternalName="Loot_RadiantRuby">
+        <DisplayName>Radiant Ruby</DisplayName>
+        <Description>CRAFTING INGREDIENT: This ruby is fantastic.</Description>
+        <EnchantmentManaCost>5</EnchantmentManaCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>MeleeDefenseAppliesSpell</Attribute>
+            <StrVal>RubyEffect2_Passive</StrVal>
+            <Provides>Attacking Units take 3 Fire Damage</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>100</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+        <ArtDef>Loot_RadiantRuby_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Loot_RadiantRuby_ArtDef">
+            <GameItemTypeModelPack InternalName="Loot_RadiantRuby_Default">
+                <IconFile>Loot_RadiantRuby.png</IconFile>
+                <TintR>110</TintR>
+                <TintG>110</TintG>
+                <TintB>210</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+</GameItemTypes>

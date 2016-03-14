@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Spells>
+    <DataChecksum NoParse="1">
+        <Ignore>DisplayName</Ignore>
+        <Translate>DisplayName</Translate>
+    </DataChecksum>
+	<SpellDef InternalName="PlaceRoad">
+        <DisplayName>Place Road</DisplayName>
+        <Description> Player can build a road on any tile via the spell book.</Description>
+        <Image>Spell_PlaceRoad.png</Image>
+        <IconFG>Spell_PlaceRoad.png</IconFG>
+        <LoreCost>22</LoreCost>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Unit Damage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EmptyTile</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Target>Player</Target>
+            <Attribute>Summoning1Spellbook</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>5</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceRoad</Attribute>
+        </GameModifier>
+        <ValidTerrainType>Land</ValidTerrainType>
+        <ValidTerrainType>Rugged_Land</ValidTerrainType>
+        <ValidTerrainType>Fertile_Land</ValidTerrainType>
+        <ValidTerrainType>HillsTerrain</ValidTerrainType>
+        <ValidTerrainType>DesertTerrain</ValidTerrainType>
+        <ValidTerrainType>Desert_Tactical_Terrain02</ValidTerrainType>
+        <ValidTerrainType>DesertTerrain_Hilly</ValidTerrainType>
+		<ValidTerrainType>DesertTerrain_Forest</ValidTerrainType>
+        <ValidTerrainType>SwampTerrain</ValidTerrainType>
+        <ValidTerrainType>ArcticTerrain</ValidTerrainType>
+        <ValidTerrainType>ArcticTerrain2</ValidTerrainType>
+        <ValidTerrainType>Arctic_Hills</ValidTerrainType>
+        <ValidTerrainType>ShadowTerrain</ValidTerrainType>
+        <ValidTerrainType>ShadowTerrain2</ValidTerrainType>
+        <ValidTerrainType>Shadow_Hills</ValidTerrainType>
+        <ValidTerrainType>BurningLands</ValidTerrainType>
+        <ValidTerrainType>Scrapyard</ValidTerrainType>
+        <ValidTerrainType>Fissure</ValidTerrainType>
+		<ValidTerrainType>Forest</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_PillarOfFlame_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_BuildRoad_01</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+        <Likelihood>100</Likelihood>
+    </SpellDef>
+</Spells>
